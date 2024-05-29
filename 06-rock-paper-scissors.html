@@ -9,10 +9,77 @@
     Rock Paper Scissors
     <p>
         <button onclick="
-            console.log(Math.random());
+
+            const randomNum =  Math.random()
+            let ComMove = ''
+
+            if(randomNum >= 0 && randomNum < 1 / 3) 
+            {ComMove ='rock'}
+            else if(randomNum >= 1 / 3 && randomNum < 2 / 3)
+            {ComMove ='Paper'}
+            else if(randomNum >= 2 / 3 && randomNum < 1)
+            {ComMove ='Scissors'}
+
+            let result = ''
+            if (ComMove === 'rock')
+            {result = 'Tie.'}
+            if (ComMove === 'Paper')
+            {result = 'You Lose.'}
+            if (ComMove === 'Scissors')
+            {result = 'You Win.'}
+
+            alert (`You picked rock. Computer picked ${ComMove}. ${result}`)
+
             ">Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+
+        <button onclick="
+        
+            const randomNum =  Math.random()
+            let ComMove = ''
+
+            if(randomNum >= 0 && randomNum < 1 / 3) 
+            {ComMove ='rock'}
+            else if(randomNum >= 1 / 3 && randomNum < 2 / 3)
+            {ComMove ='Paper'}
+            else if(randomNum >= 2 / 3 && randomNum < 1)
+            {ComMove ='Scissors'}
+
+            let result = ''
+            if (ComMove === 'rock')
+            {result = 'You win.'}
+            if (ComMove === 'Paper')
+            {result = 'Tie.'}
+            if (ComMove === 'Scissors')
+            {result = 'You lose.'}
+
+            alert (`You picked Paper. Computer picked ${ComMove}. ${result}`)
+
+        ">Paper</button>
+
+        <button onclick="
+        
+        const randomNum =  Math.random()
+        let ComMove = ''
+
+        if(randomNum >= 0 && randomNum < 1 / 3) 
+        {ComMove ='rock'}
+        else if(randomNum >= 1 / 3 && randomNum < 2 / 3)
+        {ComMove ='Paper'}
+        else if(randomNum >= 2 / 3 && randomNum < 1)
+        {ComMove ='Scissors'}
+
+        let result = ''
+        if (ComMove === 'rock')
+        {result = 'You lose.'}
+        if (ComMove === 'Paper')
+        {result = 'You win.'}
+        if (ComMove === 'Scissors')
+        {result = 'Tie.'}
+
+        alert (`You picked Scissors. Computer picked ${ComMove}. ${result}`)
+
+    ">Scissors</button>
+
     </p>
 
     <script>
